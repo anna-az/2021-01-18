@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap/js/carousel.js"></script>
+    <title>2020-01-18</title>
+</head>
+<body>
+    <div class="container" style ="padding: 20px;">
+        <form class="form-inline" name = "artist_form" >
+            <div class="form-group">
+                <label for="artist_input">Артист:</label>
+                <input type="text" name="artist" id="artist_input" class="form-control" value="Michael Jackson">
+            </div>
+            
+            <button type="submit" id="send" class="btn btn-primary">Найти</button>
+        </form>
+        <h2></h2>  
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="display: none;">
+            <ol class="carousel-indicators">
+            </ol>
+
+            <div class="carousel-inner">
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <script src="scripts/script.js" type="module"></script>
+</body>
+</html>
